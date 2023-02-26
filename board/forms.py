@@ -49,7 +49,7 @@ class BoardWrite(forms.ModelForm):
         if(title == ''):
             self.add_error('title', '제목을 입력하세요!')
         elif(content == ''):
-            self.add_error('title', '내용을 입력하세요!')
+            self.add_error('content', '내용을 입력하세요!')
         else:
             self.title                      = title
             self.content                    = content
